@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Form from "./Form";
-import "./styles.css"
 import ToDoList from "./TodoList";
+import "./styles.css";
 export default function App (){
 
 	
@@ -47,10 +47,10 @@ export default function App (){
 	}
 
 	return(
-    <>
-      	<Form onsub={addTodo} />
-      	<h1 className="header">ToDoList</h1>
-      	<ToDoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
-    </>
+    	<div className="main-container bg-[#C5DFF8] m-auto max-w-lg justify-center h-96 max-h-full w-96 rounded-md px-4">
+			<Form onsub={addTodo} />
+			<h1 className="header font-bold">My Todo's</h1>
+			<ToDoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
+		</div>
   	)
 }

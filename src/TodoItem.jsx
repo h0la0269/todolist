@@ -1,6 +1,6 @@
 export function TodoItem({completed, id, title, toggleTodo, deleteTodo}){
 	return (
-		<li>
+		<li className="indiv-list bg-[#F6F1F1] mx-2 my-4 flex justify-between self-center p-1">
 			<label>
 				<input 
 					type="checkbox" 
@@ -10,7 +10,7 @@ export function TodoItem({completed, id, title, toggleTodo, deleteTodo}){
 				{title}
 			</label>
 			<button 
-				className="btn btn-danger" 
+				className="btn btn-danger max-h-6" 
 				onClick={()=>deleteTodo(id)}
 			>
 			DELETE

@@ -2,7 +2,7 @@ import { TodoItem } from "./TodoItem"
 
 export default function ToDoList({todos, toggleTodo, deleteTodo}){
 	return (
-		<ul className="list">
+		<ul className="list pl-1 pt-2">
 			{todos.length === 0 && "No Todos"}
 			{todos.map(todo=>{
 				return (
